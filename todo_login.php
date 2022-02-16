@@ -21,6 +21,13 @@ require_once('SafetyUtil.php');
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <span class="navbar-brand">TODOリスト</span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">ユーザー登録 <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">

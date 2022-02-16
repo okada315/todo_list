@@ -4,13 +4,13 @@ class Base
 {
     protected $dbh;
 
-    const DB_NAME = 'todo';
+    const DB_NAME = 'LAA1399398-todo';
 
-    const DB_HOST = 'localhost';
+    const DB_HOST = 'mysql201.phy.lolipop.lan';
 
-    const DB_USER = 'root';
+    const DB_USER = 'LAA1399398';
 
-    const DB_PASS = '';
+    const DB_PASS = 'okada315';
 
     public function __construct()
     {

@@ -12,7 +12,7 @@ $post = SafetyUtil::sanitize($_POST);
 
 if (!SafetyUtil::isValidToken($post['token'])) {
     $_SESSION['msg']['err'] = Config::MSG_INVALID_PROCESS;
-    header('Location:todo_register.php');
+    header('Location:index.php');
     exit;
 }
 
@@ -24,7 +24,7 @@ try {
     $ret = $db->addUser($post['email'], $post['pass'], $post['family_name'], $post['first_name']);
     if (!$ret) {
         $_SESSION['msg']['err'] = Config::MSG_USER_DUPLICATE;
-        header('Location:todo_register.php');
+        header('Location:index.php');
         exit;
     }
 
