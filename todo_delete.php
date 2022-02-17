@@ -19,7 +19,7 @@ $item_name = $_SESSION['post']['item_name'];
 $expire_date = $_SESSION['post']['expire_date'];
 
 $id = $_GET['item_id'];
-
+$name = $_GET['item_name'];
 $token = SafetyUtil::generateToken();
 
 ?>
@@ -79,7 +79,7 @@ $token = SafetyUtil::generateToken();
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <div class="form-group">
                         <label for="item_name">項目名</label>
-                        <p name="item_name" id="item_name" class="form-control"><?= $item_name ?></p>
+                        <p name="item_name" id="item_name" class="form-control"><?= $name ?></p>
                     </div>
                     <div class="form-group">
                         <label for="expire_date">期限</label>

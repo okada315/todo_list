@@ -131,8 +131,8 @@ $token = SafetyUtil::generateToken();
                                 <input type="hidden" name="item_id" value="<?= $item['id'] ?>">
                                 <button class="btn btn-primary my-0" type="submit">完了</button>
                             </form>
-                            <a href="todo_edit.php?item_id=<?= $item['id'] ?>" class="btn btn-success my-0">修正</a>
-                            <a href="todo_delete.php?item_id=<?= $item['id'] ?>" class="btn btn-danger my-0">削除</a>
+                            <a href="todo_edit.php?item_id=<?= $item['id'] ?> & item_name=<?= $item['item_name'] ?>" class="btn btn-success my-0">修正</a>
+                            <a href="todo_delete.php?item_id=<?= $item['id'] ?> & item_name=<?= $item['item_name'] ?>" class="btn btn-danger my-0">削除</a>
                         </td>
                         </tr>
                     <?php

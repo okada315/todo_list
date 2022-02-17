@@ -16,6 +16,7 @@ if (empty($_SESSION['user'])) {
 }
 
 $id = $_GET['item_id'];
+$name = $_GET['item_name'];
 $token = SafetyUtil::generateToken();
 
 ?>
@@ -84,9 +85,9 @@ $token = SafetyUtil::generateToken();
                     <input type="hidden" name="token" value="<?= $token ?>">
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <div class="form-group">
-
+                   
                         <label for="item_name">項目名</label>
-                        <input type="text" name="item_name" id="item_name" class="form-control" value="">
+                        <input type="text" name="item_name" id="item_name" class="form-control" value="<?= $name ?>">
                     </div>
                     <div class="form-group">
                         <label for="expire_date">期限</label>
